@@ -1,0 +1,19 @@
+{
+  "name": "opencode Go Development",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "settings": {
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "opencode CUDA 12.9.1 + Ubuntu 24.04",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [
+    "--gpus=all",
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python"
+      ]
+    }
+  }
+}

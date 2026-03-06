@@ -1,0 +1,19 @@
+{
+  "name": "opencode Python Development",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "settings": {
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black"
+  }
+}
